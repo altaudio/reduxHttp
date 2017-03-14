@@ -9,7 +9,7 @@ class AlbumsListContainer extends Component {
     return (
       <AlbumList
         albums={this.props.albums}
-        //Pass get albums as props
+        // Pass get albums as props
         getAlbums={() => this.props.dispatch(getAlbums())}
       />
     )
@@ -17,4 +17,4 @@ class AlbumsListContainer extends Component {
 }
 
 export default connect((state) => state.albumsList)(AlbumsListContainer)
- 
+
